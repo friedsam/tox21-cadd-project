@@ -1,27 +1,99 @@
 name: tox21-env
 channels:
+  - conda-forge
   - defaults
 dependencies:
+  - brotli=1.1.0
+  - brotli-bin=1.1.0
   - bzip2=1.0.8
-  - ca-certificates=2025.2.25
+  - ca-certificates=2025.4.26
+  - cairo=1.18.0
+  - chardet=5.2.0
+  - contourpy=1.3.2
+  - cycler=0.12.1
+  - expat=2.7.1
+  - font-ttf-dejavu-sans-mono=2.37
+  - font-ttf-inconsolata=3.000
+  - font-ttf-source-code-pro=2.038
+  - font-ttf-ubuntu=0.83
+  - fontconfig=2.14.2
+  - fonts-conda-ecosystem=1
+  - fonts-conda-forge=1
+  - freetype=2.13.3
+  - freetype-py=2.3.0
+  - greenlet=3.2.2
+  - icu=73.2
+  - jpeg=9e
+  - kiwisolver=1.4.8
+  - krb5=1.21.3
+  - lcms2=2.16
+  - lerc=4.0.0
+  - libblas=3.9.0
+  - libboost=1.84.0
+  - libboost-python=1.84.0
+  - libbrotlicommon=1.1.0
+  - libbrotlidec=1.1.0
+  - libbrotlienc=1.1.0
+  - libcblas=3.9.0
+  - libcxx=20.1.4
+  - libdeflate=1.22
+  - libedit=3.1.20230828
   - libffi=3.4.4
+  - libgfortran=14.2.0
+  - libgfortran5=14.2.0
+  - libglib=2.80.2
+  - libiconv=1.18
+  - libintl=0.24.1
+  - liblapack=3.9.0
+  - libopenblas=0.3.29
+  - libpng=1.6.43
+  - libpq=16.9
+  - librdkit=2024.03.6
+  - libsqlite=3.46.0
+  - libtiff=4.7.0
+  - libwebp-base=1.5.0
+  - libzlib=1.2.13
+  - llvm-openmp=20.1.4
+  - matplotlib-base=3.10.1
+  - munkres=1.1.4
   - ncurses=6.4
-  - openssl=3.0.16
+  - openjpeg=2.5.2
+  - openssl=3.5.0
+  - pandas=2.2.3
+  - pcre2=10.43
   - pip=25.1
-  - python=3.10.16
+  - pixman=0.46.0
+  - pycairo=1.27.0
+  - pyparsing=3.2.3
+  - python=3.10.13
+  - python-dateutil=2.9.0post0
+  - python-tzdata=2025.2
+  - python_abi=3.10
+  - pytz=2025.2
+  - qhull=2020.2
   - readline=8.2
+  - reportlab=4.4.0
+  - rlpycairo=0.2.0
   - setuptools=78.1.1
+  - six=1.17.0
+  - sqlalchemy=2.0.40
   - sqlite=3.45.3
   - tk=8.6.14
+  - typing-extensions=4.13.2
+  - typing_extensions=4.13.2
+  - tzdata=2025b
+  - unicodedata2=16.0.0
   - wheel=0.45.1
   - xz=5.6.4
   - zlib=1.2.13
+  - zstd=1.5.6
   - pip:
       - absl-py==2.2.2
       - aiohappyeyeballs==2.6.1
       - aiohttp==3.11.18
       - aiosignal==1.3.2
       - anyio==4.9.0
+      - appdirs==1.4.4
       - appnope==0.1.4
       - argon2-cffi==23.1.0
       - argon2-cffi-bindings==21.2.0
@@ -31,19 +103,21 @@ dependencies:
       - async-lru==2.0.5
       - async-timeout==5.0.1
       - attrs==25.3.0
+      - autograd==1.8.0
+      - autoray==0.7.1
       - babel==2.17.0
       - beautifulsoup4==4.13.4
       - bleach==6.2.0
+      - cachetools==5.5.2
       - certifi==2025.4.26
       - cffi==1.17.1
       - charset-normalizer==3.4.2
       - comm==0.2.2
-      - contourpy==1.3.2
-      - cycler==0.12.1
       - debugpy==1.8.14
       - decorator==5.2.1
       - deepchem==2.8.0
       - defusedxml==0.7.1
+      - diastatic-malt==2.15.2
       - exceptiongroup==1.2.2
       - executing==2.2.0
       - fastjsonschema==2.21.1
@@ -67,8 +141,8 @@ dependencies:
       - ipython==8.36.0
       - ipywidgets==8.1.7
       - isoduration==20.11.0
-      - jax==0.6.0
-      - jaxlib==0.6.0
+      - jax==0.4.23
+      - jaxlib==0.4.23
       - jedi==0.19.2
       - jinja2==3.1.6
       - joblib==1.5.0
@@ -89,7 +163,6 @@ dependencies:
       - jupyterlab-server==2.27.3
       - jupyterlab-widgets==3.0.15
       - keras==3.9.2
-      - kiwisolver==1.4.8
       - libclang==18.1.1
       - lightning==2.5.1.post0
       - lightning-utilities==0.14.3
@@ -111,14 +184,15 @@ dependencies:
       - networkx==3.4.2
       - notebook==7.4.2
       - notebook-shim==0.2.4
-      - numpy==2.1.3
+      - numpy==1.26.4
       - opt-einsum==3.4.0
       - optree==0.15.0
       - overrides==7.7.0
       - packaging==24.2
-      - pandas==2.2.3
       - pandocfilters==1.5.1
       - parso==0.8.4
+      - pennylane==0.41.1
+      - pennylane-lightning==0.41.1
       - pexpect==4.9.0
       - pillow==11.2.1
       - platformdirs==4.3.8
@@ -131,11 +205,8 @@ dependencies:
       - pure-eval==0.2.3
       - pycparser==2.22
       - pygments==2.19.1
-      - pyparsing==3.2.3
-      - python-dateutil==2.9.0.post0
       - python-json-logger==3.3.0
       - pytorch-lightning==2.5.1.post0
-      - pytz==2025.2
       - pyyaml==6.0.2
       - pyzmq==26.4.0
       - rdkit==2024.9.6
@@ -147,11 +218,13 @@ dependencies:
       - rfc3986-validator==0.1.1
       - rich==14.0.0
       - rpds-py==0.24.0
+      - rustworkx==0.16.0
       - safetensors==0.5.3
       - scikit-learn==1.6.1
       - scipy==1.15.3
+      - scipy-openblas32==0.3.29.0.0
+      - seaborn==0.13.2
       - send2trash==1.8.3
-      - six==1.17.0
       - sniffio==1.3.1
       - soupsieve==2.7
       - stack-data==0.6.3
@@ -166,11 +239,13 @@ dependencies:
       - tinycss2==1.4.0
       - tokenizers==0.21.1
       - tomli==2.2.1
+      - tomlkit==0.13.2
       - torch==2.7.0
       - torch-geometric==2.6.1
       - torch-scatter==2.1.2
       - torch-sparse==0.6.18
       - torchaudio==2.7.0
+      - torchdata==0.11.0
       - torchmetrics==1.7.1
       - torchvision==0.22.0
       - tornado==6.4.2
@@ -178,8 +253,6 @@ dependencies:
       - traitlets==5.14.3
       - transformers==4.51.3
       - types-python-dateutil==2.9.0.20241206
-      - typing-extensions==4.13.2
-      - tzdata==2025.2
       - uri-template==1.3.0
       - urllib3==2.4.0
       - wcwidth==0.2.13
@@ -190,3 +263,4 @@ dependencies:
       - widgetsnbextension==4.0.14
       - wrapt==1.17.2
       - yarl==1.20.0
+prefix: /Users/claudia/anaconda3/envs/tox21-env
